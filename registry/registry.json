@@ -1,0 +1,8 @@
+{
+  "model_name": "creditcard-fraud-random-forest",
+  "version": 1,
+  "stage": "Production",
+  "roc_auc": 0.980050144706166,
+  "artifact": "registry/model_v1.pkl",
+  "lifecycle_note": "Promoted after validation of registered model artifact."
+}

@@ -1,0 +1,14 @@
+{
+  "dataset": "creditcard.csv",
+  "rows": 284807,
+  "columns": 31,
+  "features": 30,
+  "target": "Class",
+  "class_counts": {
+    "0": 284315,
+    "1": 492
+  },
+  "test_size": 0.2,
+  "random_state": 42,
+  "preprocessing": "StandardScaler"
+}

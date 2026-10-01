@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.ipynb_checkpoints/
+
+# Large datasets
+data/raw/creditcard.csv
+data/processed/X_train.csv
+data/processed/X_test.csv
+
+# Python virtual environment
+.venv/
+

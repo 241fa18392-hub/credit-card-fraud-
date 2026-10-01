@@ -1,0 +1,41 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run fraud labs 3-6",
+			"type": "shell",
+			"command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+			"args": [
+				"-u",
+				"-c",
+				"import subprocess,sys; scripts=['pipelines/run_lab3_baseline.py','pipelines/run_lab4_tracking.py','pipelines/run_lab5_pipeline.py','pipelines/run_lab6_registry.py']; [subprocess.run([sys.executable,s],check=True) for s in scripts]"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run fraud labs 3-6",
+			"type": "shell",
+			"command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+			"args": [
+				"-u",
+				"-c",
+				"import subprocess,sys; scripts=[\"pipelines/run_lab3_baseline.py\",\"pipelines/run_lab4_tracking.py\",\"pipelines/run_lab5_pipeline.py\",\"pipelines/run_lab6_registry.py\"]; [subprocess.run([sys.executable,s],check=True) for s in scripts]"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run all fraud labs sequentially",
+			"type": "shell",
+			"command": "cmd.exe",
+			"args": [
+				"/d",
+				"/c",
+				".venv\\Scripts\\python.exe pipelines\\run_lab3_baseline.py && .venv\\Scripts\\python.exe pipelines\\run_lab4_tracking.py && .venv\\Scripts\\python.exe pipelines\\run_lab5_pipeline.py && .venv\\Scripts\\python.exe pipelines\\run_lab6_registry.py"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}
